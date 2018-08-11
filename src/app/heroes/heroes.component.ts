@@ -13,7 +13,7 @@ import { HeroService } from '../hero.service';
   //   id: 1,
   //   name: 'Windstorm'
   // };
-  private selectedHero: Hero;
+  // private selectedHero: Hero;
   private heroes: Hero[];
   constructor(private heroService: HeroService) { }
 
@@ -21,9 +21,9 @@ import { HeroService } from '../hero.service';
     this.getHeroes();
   }
 
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-  }
+  // onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  // }
   getHeroes(): void {
     this.heroService.getHeroes()
       .subscribe(heroes => this.heroes = heroes);

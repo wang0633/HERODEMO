@@ -9,11 +9,10 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'detail/:id', component: HeroDetailComponent },
-  { path: 'heroes', component: HeroesComponent }
+  { path: 'heroes', component: HeroesComponent },
+  { path: 'detail/:id', component: HeroDetailComponent }
 ];
 @NgModule({
-  declarations: [],
   imports: [RouterModule.forRoot(routes)], // 初始化路由
   exports: [ RouterModule ] // 导出
 })
